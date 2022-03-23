@@ -1,0 +1,26 @@
+body{
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 67px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #C3CFD9;
+}
+
+header h1{
+    font-size: 34px;
+    color: #E8833A;
+}
+
+.content-home, .content-filme, .content-sucesso{
+    margin-top: 100px;
+}
+
