@@ -21,6 +21,38 @@ header h1{
 }
 
 .content-home, .content-filme, .content-sucesso{
-    margin-top: 100px;
+    margin-top: 70px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-home{
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-home h1{
+    font-size: 24px;
+    color: #293845;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.movie{
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.movie img{ 
+    width: 129px;
+    height: 193px;
 }
 
