@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";import React fro
 import Top from "./../Top/"
 import Home from "./../Home/"
 import Filme from "./../Filme/"
+import Sessao from "./../Sessao/"
 import Sucesso from "./../Sucesso/"
 
 export default function App(){
@@ -11,7 +12,8 @@ export default function App(){
             <Top/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/filme/:id" element={<Filme/>}/>
+                <Route path="/filme/:idFilme" element={<Filme/>}/>
+                <Route path="/sessao/:idSessao" element={<Sessao/>}/>
                 <Route path="/sucesso" element={<Sucesso/>}/>
             </Routes>
         </BrowserRouter>
