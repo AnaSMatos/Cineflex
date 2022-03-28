@@ -4,13 +4,16 @@ import axios from "axios";
 
 export default function Filme() {
     const { idFilme } = useParams();
+    const [info, setInfo] = useState([]);
     const [times, setTimes] = useState([]);
 
     useEffect(() => {
         const promisse = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/movies/${idFilme}/showtimes`)
 
-        promisse.then((result) => {
+        promisse.then(result => {
             setTimes(result.data.days);
+
+            setInfo(result.data)
         });
     }, [])
 
@@ -42,7 +45,17 @@ export default function Filme() {
                 })
                 }
             </div>
-        </div>
 
+            <footer>
+                <div className="img-footer">
+                    <img src={info.posterURL} alt=""></img>
+                </div>
+                <div className="infos-footer">
+                    <p>{info.title}</p>
+                </div>
+            </footer>
+        </div>
     )
+
+    
 }

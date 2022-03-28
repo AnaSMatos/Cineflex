@@ -12,8 +12,6 @@ export default function Home(){
         });
     }, [])
 
-    console.log(movies)
-
     return(
         <div className="content-home">
             <div className="title">

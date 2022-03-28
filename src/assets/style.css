@@ -26,6 +26,7 @@ header h1{
 
 .content-home, .content-filme, .content-sessao ,.content-sucesso{
     margin-top: 70px;
+    margin-bottom: 120px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -48,11 +49,17 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .movie{
     padding: 8px;
     box-sizing: border-box;
+    width: 145px;
+    height: 209px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
 
 .movie img{ 
@@ -107,8 +114,6 @@ header h1{
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background:#C3CFD9;
-    border: 1px solid #808F9D;
 }
 
 .legendas{
@@ -124,7 +129,7 @@ header h1{
     margin: 12px;
 }
 
-.selecionado, .disponivel, .indisponivel{
+.bottom{
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -147,11 +152,33 @@ header h1{
 
 .inputs{
     margin-top: 40px;
+    margin-left: 20px;
 }
 
-.inputs p{
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button{
+    width: 225px;
+    height: 42px;
+    background: #E8833A;
+    border-radius: 3px;
+    border: none;
+    margin-top: 50px;
+}
+
+form button p{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.inputs label{
     text-align: left;
     font-size: 18px;
+    color: #293845;
 }
 
 input{
@@ -181,9 +208,52 @@ input::placeholder{
     align-items: center;
 }
 
+.resultados{
+    margin-bottom: 40px;
+}
+
 .resultados h1{
     color: #293845;
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+footer{
+    position: fixed;
+    height: 117px;
+    right: 0;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    background: #DFE6ED;
+    border: 1px solid #9EADBA;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer .img-footer{
+    width: 64px;
+    height: 89px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+}
+
+footer img{
+    width: 48px;
+    height: 72px;
+}
+
+footer p{
+    color: #293845;
+    font-size: 23px;
+}
+
+.content-sucesso p{
+    font-size: 22px;
+    color: #293845;
 }
